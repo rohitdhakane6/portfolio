@@ -7,13 +7,13 @@ function LeftSider() {
         <div className="flex md:flex-col gap-3 flex-row">
           <a href="https://www.google.com/">
             {" "}
-            <i class="ri-facebook-circle-line text-gray-400 text-xl hover:text-white  "></i>
+            <i className="ri-facebook-circle-line text-gray-400 text-xl hover:text-white  "></i>
           </a>
 
-          <i class="ri-mail-line text-gray-400 text-xl hover:text-white "></i>
-          <i class="ri-instagram-line text-gray-400 text-xl hover:text-white   "></i>
-          <i class="ri-linkedin-box-line text-gray-400 text-xl hover:text-white   "></i>
-          <i class="ri-github-line text-gray-400 text-xl hover:text-white   "></i>
+          <i className="ri-mail-line text-gray-400 text-xl hover:text-white "></i>
+          <i className="ri-instagram-line text-gray-400 text-xl hover:text-white   "></i>
+          <i className="ri-linkedin-box-line text-gray-400 text-xl hover:text-white   "></i>
+          <i className="ri-github-line text-gray-400 text-xl hover:text-white   "></i>
         </div>
         <div className="w-[1px] h-32 bg-[#125f63] hidden md:inline"></div>
       </div>

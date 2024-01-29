@@ -11,9 +11,9 @@ function Footer() {
               <h1 className="text-white">
                   Designed and Developed By
               </h1>
-             <h className="text-white">
+             <h1 className="text-white">
                 <span className="text-white">Rohit Dhakane</span>
-             </h>
+             </h1>
         </div>
     </div>
   )

@@ -1,32 +1,13 @@
 import React ,{useState} from "react";
 // import { useSelector } from "react-redux";
 import SectionTitle from "../../Components/SectionTitle.jsx";
+import { useSelector } from "react-redux";
 
 function Experiences() {
   const [selectedItemIndex , setSelectedItemIndex] = useState(0);
-  // const { portfolioData } = useSelector((state) => state.root);
-  // const { experiences } = portfolioData;
-  const experiences = [
-    {
-      company: "Sheytech",
-      title: "React Developer",
-      period: "2021-Present",
-      description: "",
-    },
-    {
-      company: "Udemy",
-      title: "Web Developemet Instructor",
-      period: "2020-Present",
-      description: "",
-    },
-    {
-      company: "Self-Employed",
-      title: "FreeLancer",
-      period: "2018-2019",
-      description: "",
-    },
-    
-  ];
+  const { portfolioData } = useSelector((state) => state.root);
+  const { experiences } = portfolioData;
+
   return (
 
     <div>

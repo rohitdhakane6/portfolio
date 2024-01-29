@@ -3,11 +3,9 @@ import { useSelector } from "react-redux";
 import SectionTitle from "../../Components/SectionTitle";
 
 function Contact() {
-  // const { portfolioData } = useSelector((state) => state.root);
-  // const { contact } = portfolioData;
-  const contact={
-    name:"rohit"
-  }
+  const { portfolioData } = useSelector((state) => state.root);
+  const { contact } = portfolioData;
+  
   return (
     <div>
       <SectionTitle title="Say Hello" />
@@ -18,7 +16,7 @@ function Contact() {
           {Object.keys(contact).map(
             (key) =>
               key !== "_id" && (
-                <p className="ml-5">
+                <p className="ml-5" key={key}>
                   <span className="text-tertiary">{key} : </span>
                   <span className="text-tertiary">{contact[key]}</span>
                 </p>

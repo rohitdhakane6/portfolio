@@ -1,15 +1,58 @@
 require("@babel/core").transform("code", {
-    presets: ["@babel/preset-env"],
+  presets: ["@babel/preset-env"],
 });
 
-const express = require('express')
-const app = express()
-const port = 8080
+import { set, connect } from "mongoose";
+import express ,{json} from "express";
+import dotenv from "dotenv";
+import helmet from "helmet";
+const bodyParser = require('body-parser');
+import cors from "cors";
+dotenv.config();
+
+const app = express();
+
+// Adding middleware packages
+app.use(json()); // Parse incoming JSON requests
+app.use(helmet()); // Set security-related HTTP headers
+app.use(cors()); // Enable CORS for all routes
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
+// Import your individual route files
+const portfolio = require('./controller/portfolio');
+const project = require('./controller/project');
+const contact = require('./controller/contact');
+
+// Use your routes
+app.use('/portfolio', portfolio);
+app.use('/project', project);
+app.use('/contact', contact);
+
+
+
+
+
+
+
 
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
 
-app.listen(port, () => {
-  console.log(`Example app listening on port ${port}`)
-})
+
+// Mongoose setup
+const PORT = process.env.PORT || 6001;
+app.listen(PORT, () => {
+  // Setting strict mode for Mongoose queries
+  set("strictQuery", true);
+
+  // Connecting to MongoDB
+  connect(process.env.MONGO_URL)
+    .then(() => {
+      console.log(`Server listening on port ${PORT}`);
+    })
+    .catch((err) => {
+      console.error(`Error connecting to MongoDB: ${err}`);
+    });
+});

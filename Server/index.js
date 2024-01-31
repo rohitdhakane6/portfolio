@@ -9,7 +9,7 @@ import helmet from "helmet";
 const bodyParser = require('body-parser');
 import cors from "cors";
 dotenv.config();
-
+const router=require('./Routes');
 const app = express();
 
 // Adding middleware packages
@@ -19,16 +19,8 @@ app.use(cors()); // Enable CORS for all routes
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-// Import your individual route files
-const portfolio = require('./controller/portfolio');
-const project = require('./controller/project');
-const contact = require('./controller/contact');
 
-// Use your routes
-app.use('/portfolio', portfolio);
-app.use('/project', project);
-app.use('/contact', contact);
-
+app.use("/v1",router)
 
 
 

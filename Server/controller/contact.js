@@ -2,7 +2,7 @@
 const router = require('express').Router();
 import { Contact } from '../models';
 
-router.post('/update-contact', async (req, res) => {
+router.post('/update', async (req, res) => {
   try {
     const contact = await Contact.findOneAndUpdate(
       { _id: req.body._id },

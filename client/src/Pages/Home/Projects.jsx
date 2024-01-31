@@ -14,7 +14,7 @@ function Projects() {
         <div className="flex flex-col gap-5 md:gap-8 border-l-2 border-[#135e4c82] md:w-1/3 w-full">
           {projects.map((project, index) => (
             <div
-            key={index}
+              key={index}
               onClick={() => {
                 setSelectedItemIndex(index);
               }}
@@ -38,20 +38,17 @@ function Projects() {
           <img
             src={projects[selectedItemIndex].imageUrl}
             alt=""
-            className="h-60 w-72"
+            className="h-40"
           />
           <div className="flex flex-col gap-5">
-            <h1 className="text-secondary text-xl">
-              {projects[selectedItemIndex].title}
-            </h1>
+            <a href={projects[selectedItemIndex].githubLink} target="_blank" rel="noopener noreferrer">
+              <h1 className="text-secondary text-xl">
+                {projects[selectedItemIndex].title}
+                <i className="ri-external-link-fill text-white ml-1"></i>
+              </h1>
+            </a>
             <p className="text-white">
               {projects[selectedItemIndex].description}
-            </p>
-            <p className="text-white">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia
-              expedita accusantium nulla ad odio quisquam consequuntur
-              laudantium saepe ratione consectetur optio necessitatibus ut,
-              impedit ducimus corrupti ullam veniam error non.
             </p>
           </div>
         </div>

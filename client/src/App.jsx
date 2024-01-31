@@ -12,8 +12,9 @@ import {
   ShowLoading,
   ReloadData,
 } from "./redux/rootSlice";
+import Loader from "./Components/Loader";
 
-axios.defaults.baseURL = 'http://localhost:6001/';
+axios.defaults.baseURL = "http://localhost:6001/";
 function App() {
   const { loading, portfolioData, reloadData } = useSelector(
     (state) => state.root
@@ -22,7 +23,7 @@ function App() {
   const getPortfolioData = async () => {
     try {
       dispatch(ShowLoading());
-      const response = await axios.get("/portfolio/get-all-data");
+      const response = await axios.get("/v1/get-all-data");
       dispatch(SetPortfolioData(response.data));
       dispatch(ReloadData(false));
       dispatch(HideLoading());
@@ -44,8 +45,9 @@ function App() {
   }, [reloadData]);
   return (
     <BrowserRouter>
+      {loading ? <Loader /> : null}
       <Routes>
-        <Route exact path="/" element={<Home/>}></Route>
+        <Route exact path="/" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );

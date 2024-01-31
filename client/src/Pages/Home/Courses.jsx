@@ -37,12 +37,16 @@ function Courses() {
           <img
             src={courses[selectedItemIndex].imageUrl}
             alt=""
-            className="h-60 w-72"
+            className="h-40"
           />
           <div className="flex flex-col gap-5">
-            <h1 className="text-secondary text-xl">
-              {courses[selectedItemIndex].title}
-            </h1>
+            <a href={courses[selectedItemIndex].Link} target="_blank" rel="noopener noreferrer">
+              <h1 className="text-secondary text-xl">
+                {courses[selectedItemIndex].title}
+                <i className="ri-external-link-fill text-white ml-1"></i>
+              </h1>
+            </a>
+
             <p className="text-white">
               {courses[selectedItemIndex].description}
             </p>

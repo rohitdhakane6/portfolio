@@ -1,7 +1,7 @@
 // routes/projectRoutes.js
 const router = require('express').Router();
 import { Project } from '../models';
-router.post('/add-project', async (req, res) => {
+router.post('/add', async (req, res) => {
   try {
     const project = new Project(req.body);
     await project.save();
@@ -15,7 +15,7 @@ router.post('/add-project', async (req, res) => {
   }
 });
 
-router.post('/update-project', async (req, res) => {
+router.post('/update', async (req, res) => {
   try {
     const project = await Project.findOneAndUpdate(
       { _id: req.body._id },
@@ -32,7 +32,7 @@ router.post('/update-project', async (req, res) => {
   }
 });
 
-router.post('/delete-project', async (req, res) => {
+router.post('/delete', async (req, res) => {
   try {
     const project = await Project.findOneAndDelete({ _id: req.body._id });
     res.status(200).send({

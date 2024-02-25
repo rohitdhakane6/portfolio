@@ -1,19 +1,19 @@
 // models/index.js
-import Project from './project';
-import About from './about';
-import Contact from './contact';
-import Courses from './Courses';
-import Intro from './intro';
-import User from './User';
-import Experience from './Experience';
+var Project = require('./project');
+var About = require('./about');
+var Contact = require('./contact');
+var Courses = require('./Courses');
+var Intro = require('./intro');
+var User = require('./User');
+var Experience = require('./Experience');
 
 // Export all models
-export {
-  Project,
-  About,
-  Contact,
-  Courses,
-  Intro,
-  User,
-  Experience,
+module.exports = {
+  Project: Project,
+  About: About,
+  Contact: Contact,
+  Courses: Courses,
+  Intro: Intro,
+  User: User,
+  Experience: Experience,
 };

@@ -1,7 +1,8 @@
 // models/Courses.js
-import { Schema, model } from 'mongoose';
+var mongoose = require('mongoose');
+var Schema = mongoose.Schema;
 
-const coursesSchema = new Schema({
+var coursesSchema = new Schema({
   title: {
     type: String,
     required: true,
@@ -23,6 +24,6 @@ const coursesSchema = new Schema({
   // Additional fields as needed
 });
 
-const Courses = model('Courses', coursesSchema);
+var Courses = mongoose.model('Courses', coursesSchema);
 
-export default Courses;
+module.exports = Courses;

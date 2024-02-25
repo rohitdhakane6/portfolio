@@ -1,7 +1,8 @@
 // models/intro.js
-import { Schema, model } from "mongoose";
+var mongoose = require("mongoose");
+var Schema = mongoose.Schema;
 
-const introSchema = new Schema({
+var introSchema = new Schema({
   welcomeText: {
     type: String,
     required: true,
@@ -24,4 +25,6 @@ const introSchema = new Schema({
   },
 });
 
-export default model("Intro", introSchema);
+var Intro = mongoose.model("Intro", introSchema);
+
+module.exports = Intro;

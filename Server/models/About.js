@@ -1,7 +1,7 @@
 // models/About.js
-import { Schema, model } from 'mongoose';
+const mongoose = require('mongoose');
 
-const aboutSchema = new Schema({
+const aboutSchema = new mongoose.Schema({
   lottieURL: {
     type: String,
     required: true,
@@ -20,6 +20,6 @@ const aboutSchema = new Schema({
   },
 });
 
-const About = model('About', aboutSchema);
+const About = mongoose.model('About', aboutSchema);
 
-export default About;
+module.exports = About;

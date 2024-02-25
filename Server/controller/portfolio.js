@@ -1,7 +1,11 @@
-// routes/portfolioRoutes.js
 const router = require('express').Router();
-import { Intro,About,Project,Contact,Experience,Courses } from '../models';
-
+const models = require('../models');
+const Intro = models.Intro;
+const About = models.About;
+const Project = models.Project;
+const Contact = models.Contact;
+const Experience = models.Experience;
+const Courses = models.Courses;
 router.get('/get-all-data', async (req, res) => {
   try {
     const intros = await Intro.find();

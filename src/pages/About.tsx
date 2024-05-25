@@ -12,10 +12,18 @@ export default function About() {
       </div>
       <div>
         <p className="mb-4">
-          Back in 2012, I decided to try my hand at creating custom Tumblr
-          themes and tumbled head first into the rabbit hole of coding and web
-          development. Fast-forward to today, and Ive had the privilege of
-          building software for an
+          Back in 2021,I joined
+          <a
+            className="font-medium text-slate-200 hover:text-teal-300 focus-visible:text-teal-300"
+            href="https://www.dypcoei.edu.in/"
+            target="_blank"
+            rel="noreferrer noopener"
+            aria-label="https://www.dypcoei.edu.in/ (opens in a new tab)"
+          >
+            Dr. D. Y. Patil College of Engineering & Innovation in Varale, Pune
+          </a>
+          , to study computer engineering. Since then, I've been diving into
+          coding ,DSA and web development
         </p>
         <p className="mb-4">
           My main focus these days is building accessible user interfaces for
@@ -26,9 +34,9 @@ export default function About() {
           API.
         </p>
         <p>
-          When I’m not at the computer, Im usually rock climbing, reading,
-          hanging out with my wife and two cats, or running around Hyrule
-          searching for{" "}
+          When I’m not at the computer,I hit the gym to stay healthy. I also
+          like to rock climbing{" "}
+          
         </p>
       </div>
     </section>

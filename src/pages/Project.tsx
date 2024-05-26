@@ -15,34 +15,22 @@ export default function Project() {
       <div>
         <ul className="group/list ">
           <ProjectCard
-            Title="Zomato replica"
-            ImagePath="/Zomato-master.png"
-            Url="https://github.com/rohitdhakane6/Zomato-Master"
-            Description="Zomato Clone is a web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to replicate the functionality of the Zomato platform, allowing users to explore restaurants, view menus, and place orders."
+            Title="Personal Portfolio"
+            ImagePath="/Portfolio.png"
+            Url="/"
+            Description="Portfolio is a personal website build using Next.js and Tailwind CSS to showcase my projects and skills"
           />
           <ProjectCard
             Title="Zomato replica"
             ImagePath="/Zomato-master.png"
             Url="https://github.com/rohitdhakane6/Zomato-Master"
-            Description="Zomato Clone is a web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to replicate the functionality of the Zomato platform, allowing users to explore restaurants, view menus, and place orders."
+            Description="Zomato Clone is a web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to replicate the functionality of the Zomato platform, allowing users to explore restaurants, view menus, and login."
           />
           <ProjectCard
-            Title="Zomato replica"
-            ImagePath="/Zomato-master.png"
-            Url="https://github.com/rohitdhakane6/Zomato-Master"
-            Description="Zomato Clone is a web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to replicate the functionality of the Zomato platform, allowing users to explore restaurants, view menus, and place orders."
-          />
-          <ProjectCard
-            Title="Zomato replica"
-            ImagePath="/Zomato-master.png"
-            Url="https://github.com/rohitdhakane6/Zomato-Master"
-            Description="Zomato Clone is a web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to replicate the functionality of the Zomato platform, allowing users to explore restaurants, view menus, and place orders."
-          />
-          <ProjectCard
-            Title="Zomato replica"
-            ImagePath="/Zomato-master.png"
-            Url="https://github.com/rohitdhakane6/Zomato-Master"
-            Description="Zomato Clone is a web application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It aims to replicate the functionality of the Zomato platform, allowing users to explore restaurants, view menus, and place orders."
+            Title="Sociopedia Social Media App"
+            ImagePath="https://private-user-images.githubusercontent.com/109848812/271590678-9c3625e9-c4e9-4269-94e3-f06bd8375efe.png?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MTY3NTExNTYsIm5iZiI6MTcxNjc1MDg1NiwicGF0aCI6Ii8xMDk4NDg4MTIvMjcxNTkwNjc4LTljMzYyNWU5LWM0ZTktNDI2OS05NGUzLWYwNmJkODM3NWVmZS5wbmc_WC1BbXotQWxnb3JpdGhtPUFXUzQtSE1BQy1TSEEyNTYmWC1BbXotQ3JlZGVudGlhbD1BS0lBVkNPRFlMU0E1M1BRSzRaQSUyRjIwMjQwNTI2JTJGdXMtZWFzdC0xJTJGczMlMkZhd3M0X3JlcXVlc3QmWC1BbXotRGF0ZT0yMDI0MDUyNlQxOTE0MTZaJlgtQW16LUV4cGlyZXM9MzAwJlgtQW16LVNpZ25hdHVyZT1iODM1MzE5YTA2ZjkxNDE4MWEwYjMyZjQ0YjgxYjRiNjM4ZmFlYmE2MWRiZmFlMWQ0YTkxNTRmMjY1ZjQ4YzExJlgtQW16LVNpZ25lZEhlYWRlcnM9aG9zdCZhY3Rvcl9pZD0wJmtleV9pZD0wJnJlcG9faWQ9MCJ9.w9aBTBXHNPEcUvJzElPgoT5qLI6kJP0BwIuM9U0pW-U"
+            Url="https://github.com/rohitdhakane6/Social-Media-App-Sociopedia?tab=readme-ov-file"
+            Description="Sociopedia is a social media application built using the MERN (MongoDB, Express.js, React.js, Node.js) stack. It allows users to connect, share posts, and interact with each other in a social media environment."
           />
         </ul>
         <div className="mt-12">

@@ -2,7 +2,7 @@ import SkillCard from "./SkillCard";
 interface ExperienceCardProps {
   dateRange: string;
   companyUrl: string;
-  companyNamde: string;
+  companyName: string;
   jobTitle: string;
   jobDescription: string;
   skills: string[];
@@ -11,7 +11,7 @@ interface ExperienceCardProps {
 export default function ExperienceCard({
   dateRange,
   companyUrl,
-  companyNamde,
+  companyName,
   jobTitle,
   jobDescription,
   skills,
@@ -35,13 +35,13 @@ export default function ExperienceCard({
                   href={companyUrl}
                   target="_blank"
                   rel="noreferrer noopener"
-                  aria-label={`Job at ${companyNamde} (opens in a new tab)`}
+                  aria-label={`Job at ${companyName} (opens in a new tab)`}
                 >
                   <span className="absolute -inset-x-4 -inset-y-2.5 hidden rounded md:-inset-x-6 md:-inset-y-4 lg:block"></span>
                   <span>
                     {jobTitle} ·{" "}
                     <span className="inline-block">
-                      <span>{companyNamde}</span>
+                      <span>{companyName}</span>
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         viewBox="0 0 20 20"

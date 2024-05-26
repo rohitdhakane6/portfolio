@@ -50,16 +50,33 @@ export default function page() {
           <tbody>
             <ArchiveProjectCard
               Year="2023"
+              ProjectName="Persona Portfolio"
+              Link="https://rohitdhakane.vercel.app/"
+              MadeAt=""
+              skills={["Next.js", "Tailwind CSS"]}
+            />
+            <ArchiveProjectCard
+              Year="2023"
               ProjectName="Zomato Replica"
               Link="https://github.com/rohitdhakane6/Zomato-Master"
               MadeAt=""
               skills={[
                 "Node.js",
                 "React.js",
-                "Mongodb",
+                "MongoDB",
+  
+              ]}
+            />
+            <ArchiveProjectCard
+              Year="2022"
+              ProjectName="Sociopedia Social Media App"
+              Link="https://github.com/rohitdhakane6/Social-Media-App-Sociopedia"
+              MadeAt=""
+              skills={[
                 "Node.js",
                 "React.js",
                 "Mongodb",
+                
               ]}
             />
           </tbody>

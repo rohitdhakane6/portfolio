@@ -15,23 +15,16 @@ export default function Experience() {
       </div>
       <div>
         <ol className="group/list">
-          <ExperienceCard
-            companyNamde="Upstatement"
-            dateRange="2018 — 2024"
-            companyUrl="https://upstatement.com"
-            skills={["TypeScript", "javaScript"]}
-            jobDescription="Build, style, and ship high-quality websites, design systems,
-                  mobile apps, and digital experiences for a diverse array of
-                  projects for clients including Harvard Business School,
-                  Everytown for Gun Safety, Pratt Institute, Koala Health,
-                  Vanderbilt University, The 19th News, and more. Provide
-                  leadership within engineering department through close
-                  collaboration, knowledge shares, and spearheading the
-                  development of internal tools."
-            jobTitle="Lead Engineer"
+        <ExperienceCard
+            companyName="OctaNet Services Pvt Ltd."
+            dateRange="Feb — Mar 2024"
+            companyUrl="https://verification.givemycertificate.com/v/8fcd40d1-6345-4a09-9771-e02a888ad033"
+            skills={["HTML", "CSS", "JavaScript"]}
+            jobDescription="Worked on front-end development tasks using HTML, CSS, and JavaScript."
+            jobTitle="Internship"
           />
         </ol>
-        <Resume/>
+        <Resume />
       </div>
     </section>
   );
